@@ -1,0 +1,347 @@
+/*全体*/
+body{
+    width: 1400px;
+    margin: 0 auto;
+}
+/*ウィンドウ幅480px以上*/
+@media screen and ( min-width:480px )
+{
+    .sp{
+        display: none;
+    }
+}
+/*ウィンドウ幅479px以下*/
+@media screen and ( max-width:479px )
+{
+    .pc{
+        display: none;
+    }
+}
+
+/*header*/
+.header{
+    position: relative;
+}
+.header1{
+    color: white;
+    background-color: red;
+    text-align: center;
+    width: auto;
+    height: 60px;
+}
+.logo{
+    position: absolute;
+    top: 1%;
+    left: 13%;
+    box-shadow: 0 0 8px gray;
+}
+.head-p{
+    margin-top: 1%;
+    padding-left: 8%;
+    display: inline-block;
+}
+.head-name{
+    font-size: 22px;
+    margin-top: 1%;
+    padding-left: 1%;
+    display: inline-block;
+}
+.header-form{
+    text-align: right;
+    padding-right: 13%;
+    padding-top: 2%;
+}
+.tel{
+    margin-right: 5%;
+}
+.navi{
+    text-align: center;
+}
+
+/*ウィンドウ幅479px以下*/
+@media screen and ( max-width:479px )
+{
+    body{
+        width: 640px;
+    }
+
+    .header1{
+        position: relative;
+        text-align: center;
+        height: 160px;
+    }
+    .logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 160px;
+        height: 160px;
+        box-shadow: 0 0 8px gray;
+    }
+    .head-p{
+        margin-top: 7%;
+        padding-left: 8%;
+        display: inline-block;
+        font-size: 18px;
+    }
+    .head-name{
+        font-size: 24px;
+        padding-left: 20%;
+        display: inline-block;
+    }
+    .tel-sp{
+        padding-left: 2%;
+    }
+    .mail-sp{
+        padding-left: 2%;
+    }
+}
+
+/*sec1*/
+.sec1{
+    display: flex;
+    flex-direction: column;
+    background-image: url(pc/bg.png);
+    
+}
+.sec1-1{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tel2{
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+    /*sec1-1 sp*/
+    .sec1-1-sp{
+        position: relative;
+        text-align: center;
+    }
+    .tel2-sp{
+        position: absolute;
+        bottom: 5%;
+        left: 12%;
+    }
+
+.sec1-2{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tel3{
+    position: absolute;
+    bottom: 60%;
+    right: 15%;
+}
+.mail2{
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+}
+    /*sec1-2-sp*/
+    .sec1-2-sp{
+        text-align: center;
+    }
+    .quote-sp{
+        width: 600px;
+    }
+    .mail2-sp{
+        width: 500px;
+    }
+
+/*sec1-3*/
+.sec1-3{
+    background-image: url(pc/bg2.png);
+}
+.quote-price{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+    /*.quote-price_sp*/
+    .sec1-3-sp{
+        background-image: url(pc/bg2.png);
+        width: 630px;
+    }
+    .quote5-sp{
+        width: 600px;
+        height: 280px;
+    }
+
+/*sec2*/
+.sec2-1{
+    position: relative;
+}
+.tel2-1{
+    position: absolute;
+    bottom: 38%;
+    left: 18%;
+}
+.mail2-1{
+    position: absolute;
+    bottom: 10%;
+    left: 18%;
+}
+    /*sp*/
+    .sec2-1-sp{
+        position: relative;
+    }
+    .tel2-1-sp{
+        position: absolute;
+        top: 48%;
+        left: 13%;
+    }
+    .mail2-1-sp{
+        position: absolute;
+        bottom: 7%;
+        left: 13%;
+        width: 500px;
+        height: 150px;
+    }
+
+/*sec2-reason*/
+.sec2-2{
+    background-image: url(pc/bg.png);
+}
+.reason{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 5px red;
+    width: 980px;
+    padding: 2%;
+    background-color: white;
+}
+.reason-top{
+    margin-bottom: 3%;
+}
+.reason-title{
+    border-bottom: solid 2px gray;
+}
+.reason-sub{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.reason-p{
+    text-align: left;
+    width: 465px;
+    margin-right: 2%;
+}
+.content1{
+    margin-left: 2%;
+}
+.content2{
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+.sec3{
+    background-image: url(pc/bg.png);
+}
+
+/*ウィンドウ幅480px以上*/
+@media screen and ( min-width:480px )
+{
+    .sec2-2{
+        background-image: url(pc/bg.png);
+        display: flex;
+    }
+    .reason-top{
+        margin-left: 13%;
+    }
+    .reason-sub{
+        display: flex;
+        justify-content: center;
+    }
+    /*reason-sidemenu*/
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu img{
+        border: solid 3px red;
+    }
+}
+
+/*ウィンドウ幅479px以下*/
+@media screen and ( max-width:479px )
+{
+    /*sec2-reason-sp*/
+    .reason{
+        text-align: center;
+        width: 600px;
+    }
+    .reason-p{
+        text-align: left;
+        font-size: 22px;
+        width: 550px;
+        margin-left: 20px;
+    }
+    .content1{
+        width: 400px;
+        height: 260px;
+    }
+    .reason-top{
+        text-align: center;
+    }
+}
+
+/*お客様の声*/
+.sec4{
+    background-color: rgb(243, 226, 194);
+    text-align: center;
+}
+
+/*question*/
+.question{
+    background-image: url(pc/bg.png);
+    text-align: center;
+}
+.question-img{
+    border: solid 3px red;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+/*service*/
+.service{
+    background-color: rgb(243, 226, 194);
+    text-align: center;
+}
+.service-img{
+    margin-top: 3%;
+    padding-bottom: 3%;
+}
+
+/*footer*/
+.footer{
+    color: white;
+    background-color: black;
+    height: 50px;
+    text-align: center;
+    padding-top: 2%;
+}
+/*ウィンドウ幅479px以下*/
+@media screen and ( max-width:479px )
+{
+    .question{
+        width: 640px;
+    }
+    
+    /*service-sp*/
+    .service{
+        width: 640px;
+        margin-top: 10px;
+    }
+    .service1{
+        position: relative;
+    }
+    .service-p{
+        position: absolute;
+        bottom: 0;
+        right: 10%;
+        width: 400px;
+        font-size: 20px;
+        text-align: left;
+    }
+}
